@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=LinkedListDeleteFistElement()
+comment1.params=data
+comment1.target=void\ add(java.lang.Integer)
+comment2.params=index
+comment2.target=java.lang.Integer\ get(int)
+comment3.params=index
+comment3.target=boolean\ delete(int)
+comment4.params=
+comment4.target=int\ size()
+comment5.params=index
+comment5.target=com.tasks3.linkedlist.Node\ searchNode(int)
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

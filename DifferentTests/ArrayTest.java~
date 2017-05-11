@@ -1,0 +1,45 @@
+
+/**
+ * Write a description of class ArrayTest here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class ArrayTest
+{
+    // instance variables - replace the example below with your own
+    private int x;
+
+    /**
+     * Constructor for objects of class ArrayTest
+     */
+    public ArrayTest()
+    {
+        // initialise instance variables
+        x = 0;
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
+     */
+    public void sampleMethod(int y, byte[] byteArray)
+    {
+        byteArray[0] = 10;
+        byteArray[1] = 20;
+    }
+    public static void main(String[] args){
+        byte[] byteArrayMain = new byte[3];
+        byteArrayMain[0] = 0;
+        byteArrayMain[1] = 1;
+        byteArrayMain[2] = 2;
+        ArrayTest obj = new ArrayTest();
+        obj.sampleMethod(1,byteArrayMain);
+        for(int i = 0; i < byteArrayMain.length; i++){
+            System.out.println(byteArrayMain[i]);
+        }
+        
+    }
+}

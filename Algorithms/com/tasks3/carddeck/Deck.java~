@@ -1,0 +1,79 @@
+package com.tasks3.carddeck;
+
+/**
+ * Write a description of class Deck here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+
+public class Deck {
+    
+    private Card[] deckCard = new Card[36];
+    private int countCardInDeck = 0;
+        
+    public Deck(){
+        int index = 0;
+        for(int i = 0; i<=3; i++){
+            for(int j = 0; j <= 8; j++){
+                deckCard[index++] = new Card(Rank.values[j], Suit.values[i]);
+                countCardInDeck++;
+            }
+        }
+    }
+    
+    //Перемішує колоду у випадковому порядку 
+    public void shuffle() {
+        
+        
+    }
+    
+    /* * Впорядкування колоди за мастями та значеннями 
+    * Порядок сотрування: 
+    * Спочатку всі карти з мастю HEARTS, потім DIAMONDS, CLUBS, SPADES 
+    * для кожної масті порядок наступний: Ace,King,Queen,Jack,10,9,8,7,6 
+    * Наприклад 
+    * HEARTS Ace 
+    * HEARTS King 
+    * HEARTS Queen 
+    * HEARTS Jack 
+    * HEARTS 10 
+    * HEARTS 9 
+    * HEARTS 8 
+    * HEARTS 7 
+    * HEARTS 6 
+    * І так далі для DIAMONDS, CLUBS, SPADES */
+    public void order() {
+        int index = 0;
+        countCardInDeck = 0;
+        Card[] tempDeckCard = new Card[36];
+        for(int i = 0; i<=3; i++){
+            for(int j = 0; j <= 8; j++){
+                tempDeckCard[index++] = new Card(Rank.values[j], Suit.values[i]);
+                countCardInDeck++;
+            }
+        }
+        deckCard = tempDeckCard;
+    }
+    
+    //Повертає true у випадку коли в колоді ще доступні карти
+    public boolean hasNext() {
+        if(0 == countCardInDeck){
+            return false;
+        }
+        return true;
+    }
+    
+    //"Виймає" одну карту з колоди, коли буде видано всі 36 карт повертає null
+    //Карти виймаються з "вершини" колоди. Наприклад перший виклик видасть SPADES 6 потім
+    //SPADES 7, ..., CLUBS 6, ..., CLUBS Ace і так далі до HEARTS Ace
+    public Card drawOne() {
+        Card oneCard;
+        if(countCardInDeck > 0){
+            oneCard = deckCard[countCardInDeck - 1];
+            countCardInDeck--;
+            return oneCard;
+        }
+        return null; // null - the deck card is empty
+    } 
+}  

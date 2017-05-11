@@ -1,0 +1,13 @@
+interface A
+{
+    void test();
+}
+ 
+class B implements A
+{
+    @Override
+    void test()
+    {
+        System.out.println("Ok");
+    }
+}

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Deck()
+comment1.params=
+comment1.target=void\ shuffle()
+comment2.params=
+comment2.target=void\ order()
+comment2.text=\ \u0412\u043F\u043E\u0440\u044F\u0434\u043A\u0443\u0432\u0430\u043D\u043D\u044F\ \u043A\u043E\u043B\u043E\u0434\u0438\ \u0437\u0430\ \u043C\u0430\u0441\u0442\u044F\u043C\u0438\ \u0442\u0430\ \u0437\u043D\u0430\u0447\u0435\u043D\u043D\u044F\u043C\u0438\ \r\n\ \u041F\u043E\u0440\u044F\u0434\u043E\u043A\ \u0441\u043E\u0442\u0440\u0443\u0432\u0430\u043D\u043D\u044F\:\ \r\n\ \u0421\u043F\u043E\u0447\u0430\u0442\u043A\u0443\ \u0432\u0441\u0456\ \u043A\u0430\u0440\u0442\u0438\ \u0437\ \u043C\u0430\u0441\u0442\u044E\ HEARTS,\ \u043F\u043E\u0442\u0456\u043C\ DIAMONDS,\ CLUBS,\ SPADES\ \r\n\ \u0434\u043B\u044F\ \u043A\u043E\u0436\u043D\u043E\u0457\ \u043C\u0430\u0441\u0442\u0456\ \u043F\u043E\u0440\u044F\u0434\u043E\u043A\ \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0438\u0439\:\ Ace,King,Queen,Jack,10,9,8,7,6\ \r\n\ \u041D\u0430\u043F\u0440\u0438\u043A\u043B\u0430\u0434\ \r\n\ HEARTS\ Ace\ \r\n\ HEARTS\ King\ \r\n\ HEARTS\ Queen\ \r\n\ HEARTS\ Jack\ \r\n\ HEARTS\ 10\ \r\n\ HEARTS\ 9\ \r\n\ HEARTS\ 8\ \r\n\ HEARTS\ 7\ \r\n\ HEARTS\ 6\ \r\n\u0406\ \u0442\u0430\u043A\ \u0434\u0430\u043B\u0456\ \u0434\u043B\u044F\ DIAMONDS,\ CLUBS,\ SPADES
+comment3.params=
+comment3.target=boolean\ hasNext()
+comment4.params=
+comment4.target=com.tasks3.carddeck.Card\ drawOne()
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

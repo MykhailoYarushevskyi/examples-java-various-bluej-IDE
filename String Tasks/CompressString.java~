@@ -1,0 +1,64 @@
+
+/**
+ * Write a description of class CompressString here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class CompressString
+{
+    // instance variables - replace the example below with your own
+    private int x;
+
+    /**
+     * Constructor for objects of class CompressString
+     */
+    public CompressString()
+    {
+        // initialise instance variables
+        x = 0;
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     * @param  y   a sample parameter for a method
+     * @return     the sum of x and y 
+     */
+    public int sampleMethod(int y)
+    {
+        // put your code here
+        return x + y;
+    }
+    public static void main(String[] args){
+        if((args == null) || (args.length != 1)) {
+            return;
+        }
+        if(args[0].isEmpty()) {
+            System.out.println("");
+            return;
+        }
+        //System.out.println(args[0]);
+        int countSameChar = 1;
+        String summString = "";
+
+        for(int i = 0; i < args[0].length();){
+            countSameChar = 1;
+            int j = i;
+            while((i < args[0].length()-1) && (args[0].charAt(j) == args[0].charAt(j+1)) && (countSameChar < 9)){
+                countSameChar++;
+                j++;
+            }
+            String charToString = String.valueOf(args[0].charAt(i));
+            summString += charToString;
+            if(countSameChar != 1){
+                summString += Integer.toString(countSameChar);
+            }
+            i += countSameChar;
+            
+            //System.out.println("i = " + i + "; countSameChar = " + countSameChar + ";  summString : " + summString);
+            
+        }
+        System.out.println(summString);
+    }
+}

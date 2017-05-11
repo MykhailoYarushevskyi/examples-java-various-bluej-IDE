@@ -1,0 +1,36 @@
+public class BinarySearch {
+
+	public static void main(String[] args) {
+
+		int data[] = { 3, 6, 7, 10, 34, 56, 60 };
+		int numberToFind = 10;
+
+        int rezultOfSearch = -1; //default the result of this searching is negative
+        int minIndex = 0;
+        int maxIndex = 0;
+        
+        boolean noResult = true;
+        
+        maxIndex = data.length-1;
+   
+        while(noResult){
+            halfIndexValue = (maxIndex + minIndex) / 2; //half of the sum of the indexes value
+            if(arrayVariableForSearch[halfIndexValue] == numberToFind){
+                rezultOfSearch = halfIndexValue;
+                noResult = false;
+                continue;
+            }
+            else if(numberToFind < arrayVariableForSearch[halfIndexValue]){
+                maxIndex = halfIndexValue - 1;
+            }
+            else {
+                minIndex = halfIndexValue + 1;
+            }
+            if(maxIndex < minIndex){
+                rezultOfSearch = -1;
+                noResult = false;
+            }
+        }
+        System.out.println(rezultOfSearch);
+	}
+}

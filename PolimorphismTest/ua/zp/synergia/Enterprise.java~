@@ -1,0 +1,51 @@
+package ua.zp.synergia;
+/**
+ * Write a description of class Enterprise here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Enterprise
+{
+    // instance variables - replace the example below with your own
+    private int x;
+    protected String nameEnterprise = new String();
+    protected int bankAccount;
+    protected int numberOfStaff;
+    int numberWorker;
+    
+    /**
+     * Constructor for objects of class Enterprise
+     */
+    public Enterprise()
+    {
+        // initialise instance variables
+        x = 0;
+    }
+    public Enterprise(String name)
+    {
+        this.nameEnterprise = name;
+    }
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     * @param  y   a sample parameter for a method
+     * @return     the sum of x and y 
+     */
+    public int sampleMethod(int y)
+    {
+        // put your code here
+        return x + y;
+    }
+    public void setName(String name)
+    {
+        this.nameEnterprise = name);
+    }
+    public String getName()
+    {
+        if (this.nameEnterprise != null) {
+            return this.nameEnterprise;
+        }
+        return "No yet name";
+    }
+}

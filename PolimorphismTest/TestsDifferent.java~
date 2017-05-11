@@ -1,0 +1,24 @@
+
+/**
+ * Write a description of class TestsDifferent here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+class TestsDifferent
+{
+    int test(int i, int d)
+    {
+        return 0;
+    }
+     
+    static int test(int i, double d)
+    {
+        return 0;
+    }
+
+    static double test(double i, double d)
+    {
+        return 0;
+    }
+}

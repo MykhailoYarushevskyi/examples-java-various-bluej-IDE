@@ -1,0 +1,52 @@
+
+/**
+ * Write a description of class BubbleSorting here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class BubbleSorting
+{
+    // instance variables - replace the example below with your own
+    private int x;
+
+    /**
+     * Constructor for objects of class BubbleSorting
+     */
+    public BubbleSorting()
+    {
+        // initialise instance variables
+        x = 0;
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     * @param  y   a sample parameter for a method
+     * @return     the sum of x and y 
+     */
+    public int sampleMethod(int y)
+    {
+        // put your code here
+        return x + y;
+    }
+    public static void main(String[] args)
+    {
+        int[] array = {30, 2, 10, 4, 6};
+        int length = array.length;
+        int tempValue;
+        for(int i = 0; i < length-1; i++){ // external cycle 
+            for(int j = 0; j < length-1-i; j++){ //inner cycle uses change top border of cycle 
+                if(array[j] >  array[j+1]){
+                    tempValue = array[j];
+                    array[j] = array[j+1];
+                    array[j+1] = tempValue;
+                }
+            }
+        }
+        for (int i = 0; i < length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        
+    }
+}

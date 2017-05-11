@@ -1,0 +1,30 @@
+
+/**
+ * Write a description of class EqualsTest here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+class {}
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        EqualsTest t = new EqualsTest();
+
+        EqualsTest t1 = new EqualsTest();
+
+        System.out.println("t equals t1: " + t.equals(t1)); // WHY FALSE??
+        System.out.println("object t = " + t);
+        System.out.println("object t1 = " + t1);
+        
+        String s = new String("abc");
+        String s1 = new String("abc");
+        System.out.println("s equals s1: " + s.equals(11)); // WHY FALSE??
+        System.out.println("object s = " + s);
+        System.out.println("object s1 = " + s1);
+        
+    }
+
+}
