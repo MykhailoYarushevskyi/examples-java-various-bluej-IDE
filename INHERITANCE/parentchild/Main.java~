@@ -24,7 +24,9 @@ public class Main
         
         System.out.println("Child chch = new Child();");
         Child chch = new Child();
-        
+        chch.foo();
         System.out.println();
+        
+        
     }
 }

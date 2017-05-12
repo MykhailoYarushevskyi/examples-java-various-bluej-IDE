@@ -26,5 +26,12 @@ public class Main
         Child chch = new Child();
         chch.foo();
         System.out.println();
+        
+        System.out.println("Child chp = new Parent(); ** Compilation Eror **");
+        /* Cpmpilation Error 
+        Child chp = new Parent(); 
+        chp.foo();
+        System.out.println();
+        */
     }
 }
